@@ -58,9 +58,15 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
+<<<<<<< HEAD
 ul li ul li {
   background: #555;
   display: block;
+=======
+ul li ul li {
+  background: #555;
+  display: block;
+>>>>>>> cafe/master
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
@@ -69,4 +75,8 @@ ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cafe/master
