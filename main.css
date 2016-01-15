@@ -1,28 +1,46 @@
+html { 
+   background: url(image/main%20background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+
+
+  }
+ body{
+	 width: 750px;
+	 height: 750px;
+	 margin-top: 60px;
+	 margin-left: 200px;
+	 position: fixed;
+	
+	 
+ }
+
 .logo {
-    height: 20px;
-    width: 20px
-	top:10%;
-	left:3%;
-	position: absolute;
+    height: 100px;
+    width: 100px;
+	top:15%;
+	left:1000px;
+	position: fixed;
     border-radius: 100px;
 	-webkit-animation-name: spin;
 	-webkit-animation-duration: 5s;
 	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-timing-function: ease-in-out;
 	
 }
 @-webkit-keyframes spin {
 	0%{ -webkit-transform: rotate(0deg);}
-	100%{ -webkit-transform: rotate(360deg);}
+	50%{ -webkit-transform: rotate(180deg);}
+	100%{ -webkit-transform: rotate(0deg);}
 }
 nav ul {
 	-webkit-font-smoothing:antialiased;
-	text-shadow:0 1px 0 black;
-    background: #bcab98;
+    background: #66451e;
     list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
+    position: absolute;
+
 }
 nav li {
     float: left;
@@ -30,21 +48,19 @@ nav li {
     padding: 0;
     position: relative;
     min-width: 25%;
+    
 }
 nav a {
-    background: #af3838;
-    color: #444;
+    background: #79572d;
+    color: #000000;
     display: block;
     font: bold 16px/50px sans-serif;
     padding: 0 25px;
     text-align: center;
     text-decoration: none;
-    -webkit-transition: all .25s ease-in;
-       -moz-transition: all .25s ease-in;
-        -ms-transition: all .25s ease-in;
-         -o-transition: all .25s ease-in;
-            transition: all .25s ease-in;
-}
+    -webkit-transition: all .25s ease-in-out;  
+       
+       }
 nav a:hover{
 	text-decoration: underline;
      -webkit-transform:scale(1,2);
@@ -96,7 +112,7 @@ nav li ul li {
 nav li ul a:hover {
     background: #bbb;
 }
-.drop_down_menu_for_cafe:after, .cf:before {
+.drop_down_menu_for_cafe:after,  {
     content:"";
     display:table;
     position: absolute;
@@ -127,14 +143,10 @@ p{
 .container img {
     position: absolute; top: 0; left: 0;
     -webkit-animation-name: slider;
-    -webkit-animation-timing-function: ease;
+    -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-duration: 10s;
     -webkit-animation-iteration-count: infinite;
-    animation-name: slider;
-    animation-timing-function: ease;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
+   }
 @-webkit-keyframes slider{
     0% {opacity: 1;}
     20%{opacity: 0;}
@@ -149,7 +161,3 @@ p{
 }
 .container img:nth-child(1) {-webkit-animation-delay: 8s; animation-delay: 8s;}
 .container img:nth-child(2) {-webkit-animation-delay: 6s; animation-delay: 6s;}
-/*.container img:nth-child(3) {-webkit-animation-delay: 4s; animation-delay: 4s;}*/
-/*.container img:nth-child(4) {-webkit-animation-delay: 2s; animation-delay: 2s;}*/
-/*.container img:nth-child(5) {-webkit-animation-delay: 0s; animation-delay: 0s;}*/
-
