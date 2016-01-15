@@ -1,7 +1,10 @@
 .logo {
-	top:35%;
-	left:70%;
+    height: 20px;
+    width: 20px
+	top:10%;
+	left:3%;
 	position: absolute;
+    border-radius: 100px;
 	-webkit-animation-name: spin;
 	-webkit-animation-duration: 5s;
 	-webkit-animation-iteration-count: infinite;
@@ -29,7 +32,7 @@ nav li {
     min-width: 25%;
 }
 nav a {
-    background: #ddd;
+    background: #af3838;
     color: #444;
     display: block;
     font: bold 16px/50px sans-serif;
@@ -44,9 +47,13 @@ nav a {
 }
 nav a:hover{
 	text-decoration: underline;
+     -webkit-transform:scale(1,2);
+    transform: scale(1.2)
 }
 nav li:hover{
 	text-decoration: none;
+     -webkit-transform:scale(1,2);
+    transform: scale(1.2)
 }
 nav .dropdown1:after {
     content: ' ▶';
@@ -60,8 +67,6 @@ nav .dropdown2:after {
 nav .dropdown2:hover:after{
 	content:'\25bc';
 }
-
-
 nav li:hover a {
     background: #ccc;
 }
@@ -102,3 +107,49 @@ nav li ul a:hover {
 .cf {
     zoom:1;
 }
+nav{
+    top: 3%
+    -webkit-transformation: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+p{
+    color: #c33636;
+}
+.container img{
+    width: 100%;
+
+}
+
+.container {
+    position: relative;
+
+}
+.container img {
+    position: absolute; top: 0; left: 0;
+    -webkit-animation-name: slider;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: slider;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes slider{
+    0% {opacity: 1;}
+    20%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes slider{
+    0% {opacity: 1;}
+    20%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.container img:nth-child(1) {-webkit-animation-delay: 8s; animation-delay: 8s;}
+.container img:nth-child(2) {-webkit-animation-delay: 6s; animation-delay: 6s;}
+/*.container img:nth-child(3) {-webkit-animation-delay: 4s; animation-delay: 4s;}*/
+/*.container img:nth-child(4) {-webkit-animation-delay: 2s; animation-delay: 2s;}*/
+/*.container img:nth-child(5) {-webkit-animation-delay: 0s; animation-delay: 0s;}*/
+
